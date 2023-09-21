@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.HelloController">
+
+    <Label minHeight="40.0" prefHeight="40.0" text="Cadastro Contas" VBox.vgrow="NEVER" />
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Nome Cliente" />
+         <TextField fx:id="txCliente" />
+      </children>
+   </HBox>
+   <HBox layoutX="10.0" layoutY="50.0">
+      <children>
+         <Label minWidth="110.0" text="Saldo Conta" />
+         <TextField fx:id="txSaldo" />
+      </children>
+   </HBox>
+    <Button fx:id="btnAdicionarConta" onAction="#novaConta" text="Adicionar">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <StackPane>
+      <children>
+         <TableView fx:id="tbContas">
+           <columns>
+             <TableColumn fx:id="colCliente" prefWidth="75.0" text="Cliente" />
+             <TableColumn fx:id="colSaldo" prefWidth="75.0" text="Saldo" />
+           </columns>
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+         </TableView>
+      </children>
+   </StackPane>
+   <HBox alignment="CENTER" fillHeight="false" maxHeight="100.0">
+      <children>
+         <TextField fx:id="txValor" />
+         <Button mnemonicParsing="false" onAction="#sacar" text="Sacar" />
+         <Button mnemonicParsing="false" onAction="#depositar" text="Depositar" />
+      </children>
+   </HBox>
+</VBox>
