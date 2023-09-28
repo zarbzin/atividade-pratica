@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.HelloController">
+<VBox alignment="TOP_CENTER" prefHeight="628.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.Controller">
 
     <Label minHeight="40.0" prefHeight="40.0" text="Cadastro Contas" VBox.vgrow="NEVER" />
    <HBox>
@@ -23,7 +23,7 @@
       <VBox.margin>
          <Insets />
       </VBox.margin></Button>
-   <StackPane>
+   <StackPane VBox.vgrow="ALWAYS">
       <children>
          <TableView fx:id="tbContas">
            <columns>
