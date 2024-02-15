@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LoginController">
+   <children>
+      <Text layoutX="263.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Login">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="289.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <TextField fx:id="TXTEmail" layoutX="276.0" layoutY="175.0" />
+      <Text layoutX="289.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" />
+      <TextField fx:id="TXTSenha" layoutX="276.0" layoutY="267.0" />
+      <Button fx:id="btnLogin" layoutX="283.0" layoutY="318.0" mnemonicParsing="false" text="Entrar" onAction="#realizarLogin" />
+
+   </children>
+</AnchorPane>

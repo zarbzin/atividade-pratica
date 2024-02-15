@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.EstacionamentoController">
+   <children>
+      <Text layoutX="164.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidade de Véiculos" />
+      <Text layoutX="177.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarifa" />
+      <Text layoutX="177.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duração" />
+      <Text layoutX="389.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local de estacionamento" />
+      <Text layoutX="407.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emissão de recibo" />
+      <Text layoutX="366.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estacionamento de funcionários" />
+      <TextField fx:id="txtDuracao" layoutX="164.0" layoutY="261.0" /> 
+      <TextField fx:id="txtCapacidade" layoutX="164.0" layoutY="110.0" />
+      <TextField fx:id="txtTarifa" layoutX="164.0" layoutY="188.0" />
+      <TextField layoutX="164.0" layoutY="261.0" />
+      <TextField fx:id="txtLocal" layoutX="389.0" layoutY="110.0" />
+      <TextField layoutX="389.0" layoutY="188.0" />
+      <TextField layoutX="389.0" layoutY="261.0" />
+      <Text layoutX="181.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento estacionamento">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdicionar" layoutX="309.0" layoutY="329.0" mnemonicParsing="false" onAction="#adicionarAreaEstacionamento" text="Adicionar" />
+   </children>
+</AnchorPane>
